@@ -216,3 +216,75 @@ for (let filmeLonga of filmesLongas){
     console.log(`Nome: ${filmeLonga.nome}, \nAno de Lancamento: ${filmeLonga.anoDeLancamento}, \nEstá disponível na Netflix? ${filmeLonga.disponivelNetflix ?"Sim":"Não"}, \nDuração do filme: ${filmeLonga.duracao}, \nElenco do filme: ${filmeLonga.elenco}`)
 }
 
+
+//SEMANA 6
+//1. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+
+const curta = {nome: 'On Your Mark',
+anoDeLancamento: 1995,
+disponivelNetflix: false,
+duracao: 7,
+}
+
+// const recebeCurta = (objeto) => {
+//     let novoObjeto = []
+
+//     for(let i in objeto){
+//         novoObjeto.push(objeto[i])
+//     }
+//     return novoObjeto.toString().replaceAll(",", " ")
+// }
+
+// console.log("Este é um curta dos Studios Ghibli:", recebeCurta(curta))
+
+function imprimeString (objeto) { //IMPRIME UM ÚNICO OBJETO
+    
+    console.log("Este é um curta dos Studios Ghibli:", objeto.nome, objeto.anoDeLancamento, objeto.disponivelNetflix, objeto.duracao)
+
+}
+imprimeString(curta)
+
+function imprimeStringObjeto(objetos){ //IMPRIME A LISTA DE OBJETOS DO ARRAY
+    for(let string of objetos){
+        imprimeString(string)
+    }
+}
+imprimeStringObjeto(filmesLongas)
+
+//2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
+
+//criar função com dois parametros, array de objetos e string
+//função retorna objeto
+//objeto precisa ter vaor igual ao parametro passado como string //USAR FILTER?
+//caso não tenha valor igual ao parametro, rodar alerta
+
+function arrayString(filmes, titulo){
+    const resultado = filmes.filter(movie => {
+        return movie.nome.toUpperCase().includes(titulo.toUpperCase())
+    })
+    if (resultado.length === 0){
+        alert("Filme não encontrado!")
+    }else{
+    return resultado
+    }
+}
+// const titulo = prompt("Digite aqui um filme dos Studios Ghibli:")
+// console.log(arrayString (filmesLongas, titulo))
+
+let filtroFilmes = arrayString(filmesLongas, titulo)
+imprimeStringObjeto(filtroFilmes)
+
+// SEMANA 7
+// 1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens;
+// 2. Crie um cabeçalho, uma seção principal, e um footer para a página;
+// 3. Na seção principal. Crie duas divisões. Uma deve possuir um input e um botão. A outra, deve possuir sections para criar os itens da lista;
+// 4. Crie uma section para cada item da lista;
+// 5. Para cada um dos três itens criados deve possuir todas as informações do array de objetos. As informações devem estar elencadas como lista não ordenada. Esta tela não precisa interagir com o JavaScript, tendo seus dados escritos diretamente nos elementos.
+// 6. Transforme o nome/título do item em um link para um artigo sobre este item (pode ser do google, de algum blog ou da Wikipédia)
+// 💡 Recomendamos adicionar imagens a seus itens agora. Ao fazer isso, lembre-se de criar mais uma propriedade String nos seus objetos, para guardar o caminho do link até a imagem.
+
+
+
+
+
+
