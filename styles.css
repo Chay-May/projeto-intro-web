@@ -1,29 +1,96 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.gifSG{
-    width: 35vw;
-    border-radius: 20px;
-    padding: 10px; 
+body{
+   background-image: url("https://c4.wallpaperflare.com/wallpaper/937/394/501/studio-ghibli-anime-totoro-my-neighbor-totoro-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    max-width: 100%; 
 }
 
-.itens{
-    display: flex;
-    background-color: gainsboro;
-    margin: 10px;
+header {
+    /* background-image: url("https://preview.redd.it/pild3d67cyf51.jpg?width=5120&format=pjpg&auto=webp&s=a262626bae5700388b1033c4ecc5962e995c840e");
+    background-repeat: no-repeat;
+    background-size: 100em, 10%; */
+    background-color: #bee0c5a9;
+    color: #164f0f;
+    height: 20vh;
+    text-align: center;
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.button{
+    justify-items: right;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+main {
+    /* background-color: #a8765418; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    height: 60%;
+}
+
+.gifStudioGhibli {
+      /* margin: 5%; */
+    border-radius: 30px;
+    padding: 2%;
+    height: 20vw;
+    width: 50%;
+    /* background-color: #478b8f91; */
+}
+ 
+ ul {
+    /* margin: 10px; */
+    /* flex-wrap: wrap; */
+    font-size: 140%;
+    height: 20vw;
+    width: 50%;
+    padding: 2%;
+    color: #090909;
+    list-style: none;
+} 
+
+.linkImg{
+    /* background-color: #7fffd41b; */
+    color: #e6f584;
+    font-style: bold;
+}
+
+.itens {
+     /* gap: 50px; */
     /* padding: 10px; */
+    /* align-items: center; */
+     /* flex-direction: */
+      /* word-wrap: break-word; */
+      /* margin: 10px; */
+    display: flex;
+    background-color: #79d8db3d;
     width: 50vw;
     border-radius: 20px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    justify-items: center;
+    padding: 10px;
 }
 
-.itens li{
-    color: rgb(83, 1, 1);
-    margin: 10px;
-    flex-wrap: wrap;
+footer {
+    /* background-image: url(https://preview.redd.it/9dmfs0g8cyf51.jpg?width=5120&format=pjpg&auto=webp&s=6ad6724ef04a37b967dcce5a686e978ab8045a3c); */
+    height: 15vh;
+    background-color: #db8c838e;
+    color: #753C17;
+    text-align: center;
+    align-items: center;
+    bottom: 0;
+    display: grid;
+}
+
+a{
+    color:#753C17
 }
