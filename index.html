@@ -6,67 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjetoChay</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- <img src="https://c4.wallpaperflare.com/wallpaper/225/913/161/studio-ghibli-spirited-away-anime-movies-wallpaper-preview.jpg" alt="Chihiro observando o trem na água" id="imgBody"> -->
-    <header>
+    <header class="header">
         <!-- <img src="https://preview.redd.it/pild3d67cyf51.jpg?width=5120&format=pjpg&auto=webp&s=a262626bae5700388b1033c4ecc5962e995c840e" alt="Spiritos da floresta" id="imgHeader"> -->
-        <h1>
+        <h1 class="h1Header">
             Filmes Studios Ghibli
         </h1>
-    </header>
-    <main>
-        <section class="button">
-        <input type="text" id="pesquisaFilmes" placeholder="Pesquise aqui!">
-        <button><input type="image" ; src="https://cdn-icons-png.flaticon.com/128/49/49116.png" ; height="12" ;
+        <section class="buttonHeader">
+            <input type="text" id="pesquisaFilmes" placeholder="Pesquise aqui!">
+            <button type="submit" onclick="buscarFilmes()"><input type="image" ; src="https://cdn-icons-png.flaticon.com/128/49/49116.png" ; height="12" ;
                     width="12"></button>
         </section>
-        <section class="itens">
+    </header>
+    <main class="main">
+        <section class="itensContainer" id="itensContainer">
+            <!-- <section class="itens">
                 <img src="https://pa1.narvii.com/6474/bbdd8d50ca2ad412c704eb61fabaa68ac74c565b_hq.gif"
                     alt="Gif Totoro fazendo dana do crescimento" class="gifStudioGhibli">
-            <ul>
-                <li><a href="https://www.netflix.com/br/title/70019062" target="_blank" class="linkImg">Nome: Nausicaä do Vale do
-                        Vento</a></li>
-                <li>Ano de Lancamento: 1984</li>
-                <li>Está disponível na Netflix? Sim</li>
-                <li>Duração do filme: 117</li>
-                <li>Elenco do filme: Sumi Shimamoto, Goro Naya, Yoji Matsuda, Yoshiko Sakakibara, Iemasa Kayumi</li>
-            </ul>
-        </section>
-        <section class="itens">
+                <ul>
+                    <li><a href="https://www.netflix.com/br/title/70019062" target="_blank" class="linkImg">Nome:
+                            Nausicaä do Vale do
+                            Vento</a></li>
+                    <li>Ano de Lancamento: 1984</li>
+                    <li>Está disponível na Netflix? Sim</li>
+                    <li>Duração do filme: 117</li>
+                    <li>Elenco do filme: Sumi Shimamoto, Goro Naya, Yoji Matsuda, Yoshiko Sakakibara, Iemasa Kayumi</li>
+                </ul>
+            </section>
+            <section class="itens">
                 <img src="https://3.bp.blogspot.com/--9DRaSUMsKA/UKp_xEFXDkI/AAAAAAAAFhM/V1FWM9_5204/s1600/tumblr_m6rcvikBqF1raym3wo1_500_large.gif"
                     alt="Gif Totoro fazendo dana do crescimento" class="gifStudioGhibli">
-            <ul>
-                <li><a href="https://www.netflix.com/br/title/60027393" target="_blank" class="linkImg"> Nome: O Castelo no Céu</a></li>
-                <li>Ano de Lancamento: 1986</li>
-                <li>Está disponível na Netflix? Sim</li>
-                <li>Duração do filme: 124</li>
-                <li>Elenco do filme: Mayumi Tanaka, Keiko Yokozawa, Kotoe Hatsui, Minori Terada</li>
-            </ul>
-        </section>
-        <section class="itens">
+                <ul>
+                    <li><a href="https://www.netflix.com/br/title/60027393" target="_blank" class="linkImg"> Nome: O
+                            Castelo no Céu</a></li>
+                    <li>Ano de Lancamento: 1986</li>
+                    <li>Está disponível na Netflix? Sim</li>
+                    <li>Duração do filme: 124</li>
+                    <li>Elenco do filme: Mayumi Tanaka, Keiko Yokozawa, Kotoe Hatsui, Minori Terada</li>
+                </ul>
+            </section>
+            <section class="itens">
                 <img src="https://miro.medium.com/max/1000/1*2gTkVFE0p5YZ4rRfJ7RjXw.gif"
                     alt="Gif Totoro fazendo dana do crescimento" class="gifStudioGhibli">
-            <ul>
-                <li><a href="https://www.netflix.com/br/title/60032294" target="_blank" class="linkImg"> Nome: Meu Amigo Totoro</a></li>
-                <li>Ano de Lancamento: 1988</li>
-                <li>Está disponível na Netflix? Sim</li>
-                <li>Duração do filme: 86</li>
-                <li>Elenco do filme: Chika Sakamoto, Noriko Hidaka, Hitoshi Takagi</li>
-            </ul>
+                <ul>
+                    <li><a href="https://www.netflix.com/br/title/60032294" target="_blank" class="linkImg"> Nome: Meu
+                            Amigo Totoro</a></li>
+                    <li>Ano de Lancamento: 1988</li>
+                    <li>Está disponível na Netflix? Sim</li>
+                    <li>Duração do filme: 86</li>
+                    <li>Elenco do filme: Chika Sakamoto, Noriko Hidaka, Hitoshi Takagi</li>
+                </ul>
+            </section> -->
         </section>
     </main>
     <footer>
         <section>
-    <p> Chayenne Mayara </p>
-    </br>
-    <a href="https://github.com/Chay-May" target="_blank">Clique aqui!</a>
-    <!-- <img src="https://preview.redd.it/9dmfs0g8cyf51.jpg?width=5120&format=pjpg&auto=webp&s=6ad6724ef04a37b967dcce5a686e978ab8045a3c" alt="Fantasma e Chihiro" id="imgFooter"> -->
-        </section>   
-</footer>
+            <p> Chayenne Mayara </p>
+            </br>
+            <a href="https://github.com/Chay-May" target="_blank">Clique aqui!</a>
+            <!-- <img src="https://preview.redd.it/9dmfs0g8cyf51.jpg?width=5120&format=pjpg&auto=webp&s=6ad6724ef04a37b967dcce5a686e978ab8045a3c" alt="Fantasma e Chihiro" id="imgFooter"> -->
+        </section>
+    </footer>
     <!-- SEMANA 7
     1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens;
     2. Crie um cabeçalho, uma seção principal, e um footer para a página;
