@@ -374,13 +374,13 @@ function criaCard(filmes) {
 
     for (const filme of filmes) {
         container = `<section class="itens">
-        <img src= ${filme.img} >
+        <img src= ${filme.img}>
         <ul>
-            <li>Nome: ${filme.nome}</li>
-            <li>Ano de Lancamento: ${filme.anoDeLancamento}</li>
-            <li>Está disponível na Netflix? ${filme.disponivelNetflix}</li>
-            <li>Duração do filme: ${filme.duracao}</li>
-            <li>Elenco do filme: ${filme.elenco}</li>
+            <li><p>Nome:</p> ${filme.nome}</li>
+            <li><p>Ano de Lancamento:</p> ${filme.anoDeLancamento}</li>
+            <li><p>Está disponível na Netflix?</p> ${filme.disponivelNetflix}</li>
+            <li><p>Duração do filme:</p> ${filme.duracao}</li>
+            <li><p>Elenco do filme:</p> ${filme.elenco}</li>
         </ul>
     </section>`;
  
